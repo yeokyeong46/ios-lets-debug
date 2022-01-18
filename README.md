@@ -54,8 +54,15 @@ breakpoint set --name changeTextColor
 <img width="506" alt="스크린샷 2022-01-18 오후 3 32 11" src="https://user-images.githubusercontent.com/47771646/149883175-9a1f8c21-b527-4785-a4f0-320305d16aba.png">
 
 - 두 번째 뷰 컨트롤러의 뷰가 화면에 표시된 상태에서, 두 번째 뷰 컨트롤러 까지의 메모리 그래프를 캡쳐해보세요
+```
+```
 - LLDB의 특정 명령어의 별칭을 설정해줄 수 있는 명령어는 무엇일까요?
 ```
 command alias poc expression -l objc -O --
 ```
 - LLDB의 `v`, `po`, `p` 명령어의 차이에 대해 알아봅시다
+```
+v
+po <expr> = expression --object-description -- <expr> : debug description
+p <expr> = expression -- <expr> : outputs LLDB-formmatted description
+```
